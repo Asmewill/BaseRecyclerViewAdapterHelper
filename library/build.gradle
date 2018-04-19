@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 android {
     compileSdkVersion 26
-
+    buildToolsVersion "25.0.2"
     defaultConfig {
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -47,6 +47,6 @@ artifacts {
 
 dependencies {
 
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    compileOnly 'com.android.support:recyclerview-v7:26.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 }

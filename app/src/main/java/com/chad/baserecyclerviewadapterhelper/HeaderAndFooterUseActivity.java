@@ -96,7 +96,7 @@ public class HeaderAndFooterUseActivity extends BaseActivity {
 
     private void initAdapter() {
         headerAndFooterAdapter = new HeaderAndFooterAdapter(PAGE_SIZE);
-        headerAndFooterAdapter.openLoadAnimation();
+        headerAndFooterAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mRecyclerView.setAdapter(headerAndFooterAdapter);
 //        mRecyclerView.addOnItemTouchListener(new OnItemClickListener() {
 //            @Override

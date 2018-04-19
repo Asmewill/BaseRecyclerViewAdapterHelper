@@ -119,7 +119,7 @@ public class PullToRefreshUseActivity extends BaseActivity {
                 loadMore();
             }
         });
-        mAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_LEFT);
+        mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
 //        mAdapter.setPreLoadNumber(3);
         mRecyclerView.setAdapter(mAdapter);
 

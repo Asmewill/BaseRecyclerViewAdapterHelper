@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
 
     @SuppressWarnings("unchecked")
     private void initAdapter() {
-        BaseQuickAdapter homeAdapter = new HomeAdapter(R.layout.home_item_view, mDataList);
+        BaseQuickAdapter homeAdapter = new HomeAdapter(R.layout.home_item_view, mDataList,this);
         homeAdapter.openLoadAnimation();
         View top = getLayoutInflater().inflate(R.layout.top_view, (ViewGroup) mRecyclerView.getParent(), false);
         homeAdapter.addHeaderView(top);
